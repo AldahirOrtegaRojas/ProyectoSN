@@ -22,16 +22,21 @@
                 </h2>
             </div>
         </div>
+    
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3"
             src="{{service.image.url}}" width="35%" alt="">
         <div class="product-item-description d-flex ml-auto">
             <div class="bg-faded p-5 rounded">
                 <p class="mb-0">{{service.content|safe}}</p>
             </div>
+    
         </div>
         </div>
+    
     </div>
     </section>
+
+
   {% endfor %}  
 
 {% endblock %}
