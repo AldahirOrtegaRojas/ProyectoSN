@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from gestionPedidos import views
 
 
 urlpatterns = [
@@ -24,6 +25,7 @@ urlpatterns = [
    path('page/', include('pages.urls')),
    path('contact/', include('contact.urls')),
    path('admin/', admin.site.urls),
+   path('busqueda_productos/', views.busqueda_productos),
 ]
 if settings.DEBUG:
     from django.conf.urls.static import static
