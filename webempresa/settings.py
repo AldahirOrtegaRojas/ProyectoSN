@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'contact',
     'services.apps.ServicesConfig',
     'social.apps.SocialConfig',
+    'gestionPedidos',
 ]
 
 MIDDLEWARE = [
